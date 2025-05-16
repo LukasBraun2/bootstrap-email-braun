@@ -1,0 +1,25 @@
+body {
+    margin: 0;
+}
+
+
+.my-container {
+    border: 1px solid green;
+}
+
+
+.my-row {
+    border: 3px solid red;
+    height: 300px;
+}
+
+
+.my-col {
+    border: 3px dotted blue;
+}
+
+
+#special-col{
+    display: flex;
+    justify-content: center;
+}
