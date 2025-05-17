@@ -4,49 +4,128 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hello World</title>
+    <title>Bootstrap Project</title>
 
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
 
 </head>
 <body>
 
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <!--col-8 and col-sm-4 to get search bar spaced separately from options menu-->
-  <div class="d-flex col-8 col-sm-4">
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav">
+        <!-- Container for Entire Email Website -->
+        <div class="container-fluid vh-100 myborder1">
 
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Options
-          </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
-          </ul>
-        </li>
-      </ul>
-    </div>
-    <!--add search bar separate from navbar in order to keep from disappearing on
-    smaller screens-->
-      <form class="d-flex">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success" type="submit">Search</button>
-      </form>
-  </div>
+            <!-- Top Search Bar (Always Visible) and Hamburger Menu (Hamburger Menu Visible only on XS Mobile Screens) -->
+            <div class="row topBarColor">
+                <div class="col myborder3">
+                    <div class="row myborder2">
+                        <div class="col d-flex flex-wrap flex-row justify-content-start m-2 myborder3">
+
+                            <!-- Navigation Button (Visible only on XS Mobile Screens) -->
+                            <button class="btn d-block d-sm-none bg-white m-2" style="font-size: 1.3rem;" type="button"
+                                data-bs-toggle="offcanvas" data-bs-target="#offcanvasNav" aria-controls="offcanvasNav">
+                                <span class="bi bi-list"></span>
+                            </button>
+
+                            <!-- Offcanvas Main Code -->
+                            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNav"
+                                aria-labelledby="offcanvasNavLabel">
+                                <!-- Close (X) Button in Offcanvas Menu -->
+                                <div class="offcanvas-header">
+                                    <h5 class="offcanvas-title" id="offcanvasNavLabel"></h5>
+                                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                                        aria-label="Close"></button>
+                                </div>
+                                <!-- Offcanvas Email Links -->
+                                <div class="row">
+                                    <div class="col-10 ms-5">
+                                        <div class="list-group" id="myList" role="tablist">
+                                            <a class="list-group-item list-group-item-action p-2 rounded-0 border-0"
+                                                data-toggle="list" href="#inbox" role="tab">Inbox</a>
+                                            <a class="list-group-item list-group-item-action p-2 rounded-0 border-0"
+                                                data-toggle="list" href="#sent" role="tab">Sent</a>
+                                            <a class="list-group-item list-group-item-action p-2 rounded-0 border-0"
+                                                data-toggle="list" href="#drafts" role="tab">Drafts</a>
+                                            <a class="list-group-item list-group-item-action p-2 rounded-0 border-0"
+                                                data-toggle="list" href="#junk" role="tab">Junk</a>
+                                            <a class="list-group-item list-group-item-action p-2 rounded-0 border-0"
+                                                data-toggle="list" href="#trash" role="tab">Trash</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+            <!--add search bar to always be visible-->
+                          <form class="d-flex ms-3">
+                            <input class="me-2" type="search" placeholder="Search" aria-label="Search">
+                         </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Row that Encompasses Navigation and Emails -->
+            <div class="row h-100 myborder2">
+                <!-- Left Navigation Sidebar (Hidden on XS Mobile Screens) -->
+                <div class="col-sm-2 d-none d-sm-block leftNavigationColor myborder3">
+                    <div class="list-group" id="myList" role="tablist">
+                        <a class="list-group-item list-group-item-action p-2 rounded-0 border-0 bg-transparent"
+                            data-toggle="list" href="#inbox" role="tab">Inbox</a>
+                        <a class="list-group-item list-group-item-action p-2 rounded-0 border-0 bg-transparent"
+                            data-toggle="list" href="#sent" role="tab">Sent</a>
+                        <a class="list-group-item list-group-item-action p-2 rounded-0 border-0 bg-transparent"
+                            data-toggle="list" href="#drafts" role="tab">Drafts</a>
+                        <a class="list-group-item list-group-item-action p-2 rounded-0 border-0 bg-transparent"
+                            data-toggle="list" href="#junk" role="tab">Junk</a>
+                        <a class="list-group-item list-group-item-action p-2 rounded-0 border-0 bg-transparent"
+                            data-toggle="list" href="#trash" role="tab">Trash</a>
+                    </div>
+                </div>
+
+
+                <!-- Email List and Email Contents -->
+                <div class="col-xs-12 col-sm-10 myborder6">
+                    <div class="row">
+                        <!-- Email List -->
+                        <div class="col-sm-12 col-lg-6 mt-1 mb-5 myborder5">
+                            <div class="list-group" id="list-tab" role="tablist">
+                                <a class="list-group-item list-group-item-action p-3 rounded-0"
+                                    href="#inbox" role="tab">Spongebob quotes</a>
+                                <a class="list-group-item list-group-item-action p-3 rounded-0"
+                                    href="#sent" role="tab">Important, your attention needed immediately!</a>
+                                <a class="list-group-item list-group-item-action p-3 rounded-0"
+                                    href="#drafts" role="tab">Facebook notification</a>
+                                <a class="list-group-item list-group-item-action p-3 rounded-0"
+                                    href="#trash" role="tab">Happy Birthday!</a>
+                            </div>
+                        </div>
+
+                        <!-- Email Contents Spongebob quotes -->
+                        <div class="col-sm-12 col-lg-6 mt-1 myborder5">
+                            <p>Welcome to the club! welcome to the club! welcome squidward welcome squidward 
+                              welcome squidward! Imagination! These fries cannot be fries without you.
+                              and this stove is not a stove, and this grill is not a grill, without youuuuu.
+                              I am a Goofy Goober, you're a Goofy Goober, we're all Goofy Goobers, yeah!
+                              Goofy Goofy Goober, Goofy Goober, Goofy Goober, yeah!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 </nav>
 
+      
 
+
+
+<script src="index.js"></script>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
 </body>
 </html>
+
+
+<!-- used some of navbar from https://getbootstrap.com/docs/5.0/components/navbar/-->

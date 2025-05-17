@@ -1,4 +1,4 @@
-body {
+/*body {
     margin: 0;
 }
 
@@ -22,4 +22,11 @@ body {
 #special-col{
     display: flex;
     justify-content: center;
+}*/
+.leftNavigationColor {
+    background-color: rgb(167, 167, 167);
+}
+
+.topBarColor {
+    background-color: rgb(47, 47, 47);
 }
