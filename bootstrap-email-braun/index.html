@@ -72,7 +72,7 @@
                 <div class="col-sm-2 d-none d-sm-block optionsColor myborder3">
                     <div class="list-group" id="myList" role="tablist">
                       <div class="list-group mt-3">
-                        <a href="#" class="list-group-item list-group-item-action">Inbox</a>
+                        <a href="#" class="list-group-item list-group-item-action active">Inbox</a>
                         <a href="#" class="list-group-item list-group-item-action">Sent</a>
                         <a href="#" class="list-group-item list-group-item-action">Drafts</a>
                         <a href="#" class="list-group-item list-group-item-action">Junk</a>
@@ -83,7 +83,7 @@
 
 
                 <!-- Email List and Email Contents -->
-                <div class="col-xs-12 col-sm-10 emailColor myborder6">
+                <div class="col-xs-12 col-sm-10 myborder6">
                     <div class="row">
                         <!-- Email List -->
                         <div class="col-sm-12 col-lg-6 mt-3 mb-5 myborder5">
@@ -100,14 +100,27 @@
                         </div>
 
                         <!-- Email Contents Spongebob quotes -->
-                        <div class="col-sm-12 col-lg-6 mt-3 optionsColor myborder5">
+                        <div class="col-sm-12 col-lg-6 mt-3 myborder5">
                             <p>Welcome to the club! welcome to the club! welcome squidward welcome squidward 
                               welcome squidward! Imagination! These fries cannot be fries without you.
                               and this stove is not a stove, and this grill is not a grill, without youuuuu.
                               I am a Goofy Goober, you're a Goofy Goober, we're all Goofy Goobers, yeah!
                               Goofy Goofy Goober, Goofy Goober, Goofy Goober, yeah!
                             </p>
+                          <div class="mb-3">
+                            <label for="exampleFormControlTextarea1" class="form-label">Reply</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                          </div>
+                          <button type="submit" class="btn btn-danger">Reply</button>
+                          <!-- icons on reply box -->
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-paperclip" viewBox="0 0 16 16">
+                            <path d="M4.5 3a2.5 2.5 0 0 1 5 0v9a1.5 1.5 0 0 1-3 0V5a.5.5 0 0 1 1 0v7a.5.5 0 0 0 1 0V3a1.5 1.5 0 1 0-3 0v9a2.5 2.5 0 0 0 5 0V5a.5.5 0 0 1 1 0v7a3.5 3.5 0 1 1-7 0V3z"/>
+                          </svg>
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash-fill" viewBox="0 0 16 16">
+                            <path d="M2.5 1a1 1 0 0 0-1 1v1a1 1 0 0 0 1 1H3v9a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V4h.5a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H10a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1H2.5zm3 4a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5zM8 5a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7A.5.5 0 0 1 8 5zm3 .5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 1 0z"/>
+                          </svg>
                         </div>
+                        
                     </div>
                 </div>
             </div>
