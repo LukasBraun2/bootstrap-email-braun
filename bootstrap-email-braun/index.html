@@ -24,11 +24,25 @@
                         <div class="col d-flex flex-wrap flex-row justify-content-start m-2 myborder3">
 
                             <!-- Navigation Button (Visible only on XS Mobile Screens) -->
-                            <button class="btn d-block d-sm-none bg-white m-2" style="font-size: 1.3rem;" type="button"
-                                data-bs-toggle="offcanvas" data-bs-target="#offcanvasNav" aria-controls="offcanvasNav">
-                                <span class="bi bi-list"></span>
-                            </button>
-
+                            @media only screen and (max-width: 600px) {
+                                
+                            <div class="collapse" id="navbarToggleExternalContent">
+                            <div class="navBarColor p-4">
+                                <h5 class="text-white h4">Options</h5>
+                                <h5 class="text-white h6">Inbox</span>
+                                <h5 class="text-white h6">Sent</span>
+                                <h5 class="text-white h6">Junk</span>
+                                <h5 class="text-white h6">Trash</span>
+                            </div>
+                            </div>
+                            <nav class="navbar navbar-dark navbarColor">
+                            <div class="container-fluid">
+                                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                                </button>
+                            </div>
+                            </nav>
+                        }
                             <!-- Offcanvas Main Code -->
                             <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNav"
                                 aria-labelledby="offcanvasNavLabel">
@@ -102,7 +116,7 @@
                         <!-- Email Contents Spongebob quotes -->
                         <div class="col-sm-12 col-lg-6 mt-3 myborder5">
                             <p>Welcome to the club! welcome to the club! welcome squidward welcome squidward 
-                              welcome squidward! Imagination! These fries cannot be fries without you.
+                              welcome squidward! Imaginaaation! These fries cannot be fries without you.
                               and this stove is not a stove, and this grill is not a grill, without youuuuu.
                               I am a Goofy Goober, you're a Goofy Goober, we're all Goofy Goobers, yeah!
                               Goofy Goofy Goober, Goofy Goober, Goofy Goober, yeah!
