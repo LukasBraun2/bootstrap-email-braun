@@ -14,16 +14,16 @@
 </head>
 <body>
 
-        <!-- Container for Entire Email Website -->
-        <div class="container-fluid vh-100 myborder1">
+        <!-- container for everything -->
+        <div class="container-fluid vh-100">
 
-            <!-- Top Search Bar (Always Visible) and Hamburger Menu (Hamburger Menu Visible only on XS Mobile Screens) -->
+            <!-- Title bar -->
             <div class="row navBarColor">
-                <div class="col myborder3">
-                    <div class="row myborder2">
-                        <div class="col d-flex flex-wrap flex-row justify-content-start m-2 myborder3">
+                <div class="col">
+                    <div class="row">
+                        <div class="col d-flex flex-wrap flex-row justify-content-start m-2">
 
-                            <!-- Navigation Button (Visible only on XS Mobile Screens) -->
+                            <!-- collapsable hamburger menu (Visible only on Mobile Screens) -->
                                 
                             <div class="collapse" id="navbarToggleExternalContent">
                             <div class="navBarColor p-4">
@@ -41,33 +41,7 @@
                                 </button>
                             </div>
                             </nav>
-                            <!-- Offcanvas Main Code -->
-                            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNav"
-                                aria-labelledby="offcanvasNavLabel">
-                                <!-- Close (X) Button in Offcanvas Menu -->
-                                <div class="offcanvas-header">
-                                    <h5 class="offcanvas-title" id="offcanvasNavLabel"></h5>
-                                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
-                                        aria-label="Close"></button>
-                                </div>
-                                <!-- Offcanvas Email Links -->
-                                <div class="row">
-                                    <div class="col-10 ms-5">
-                                        <div class="list-group" id="myList" role="tablist">
-                                            <a class="list-group-item list-group-item-action p-2 rounded-0 border-0"
-                                                data-toggle="list" href="#inbox" role="tab">Inbox</a>
-                                            <a class="list-group-item list-group-item-action p-2 rounded-0 border-0"
-                                                data-toggle="list" href="#sent" role="tab">Sent</a>
-                                            <a class="list-group-item list-group-item-action p-2 rounded-0 border-0"
-                                                data-toggle="list" href="#drafts" role="tab">Drafts</a>
-                                            <a class="list-group-item list-group-item-action p-2 rounded-0 border-0"
-                                                data-toggle="list" href="#junk" role="tab">Junk</a>
-                                            <a class="list-group-item list-group-item-action p-2 rounded-0 border-0"
-                                                data-toggle="list" href="#trash" role="tab">Trash</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+ 
             <!--add search bar to always be visible-->
                           <form class="d-flex ms-3">
                             <input class="me-2" type="search" placeholder="Search" aria-label="Search">
@@ -79,9 +53,9 @@
 
 
             <!-- Row that Encompasses Navigation and Emails -->
-            <div class="row h-100 myborder2">
+            <div class="row h-100">
                 <!-- Left Navigation Sidebar (Hidden on XS Mobile Screens) -->
-                <div class="col-sm-2 d-none d-sm-block optionsColor myborder3">
+                <div class="col-sm-2 d-none d-sm-block optionsColor">
                     <div class="list-group" id="myList" role="tablist">
                       <div class="list-group mt-3">
                         <a href="#" class="list-group-item list-group-item-action active">Inbox</a>
@@ -95,10 +69,10 @@
 
 
                 <!-- Email List and Email Contents -->
-                <div class="col-xs-12 col-sm-10 myborder6">
+                <div class="col-xs-12 col-sm-10">
                     <div class="row">
                         <!-- Email List -->
-                        <div class="col-sm-12 col-lg-6 mt-3 mb-5 myborder5">
+                        <div class="col-sm-12 col-lg-6 mt-3 mb-5">
                             <div class="list-group" id="list-tab" role="tablist">
                                 <a class="list-group-item list-group-item-action active p-3 rounded-3"
                                     role="tab">Spongebob quotes</a>
@@ -112,7 +86,7 @@
                         </div>
 
                         <!-- Email Contents Spongebob quotes -->
-                        <div class="col-sm-12 col-lg-6 mt-3 myborder5">
+                        <div class="col-sm-12 col-lg-6 mt-3">
                             <p>Welcome to the club! welcome to the club! welcome squidward welcome squidward 
                               welcome squidward! Imaginaaation! These fries cannot be fries without you.
                               and this stove is not a stove, and this grill is not a grill, without youuuuu.
